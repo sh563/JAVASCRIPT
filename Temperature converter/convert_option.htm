@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='./animated_dropdown_2.css'>  -->
+</head>
+<body>
+    <div>
+        <h1>Temperature Convertor</h1>
+        <input type="radio" name="choice" class="celsius" onclick="convert_celsius()"/><span >Fahrenheit to Celsius</span><br>
+        <input type="radio" name="choice" class="fahrenheit" onclick="convert_fahrenheit()"/><span >Celsius to Fahrenheit </span>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td class="change_name">Celsius</td>
+                <td><input type="number"  class="value"/></td>
+            </tr>
+            <tr>
+                <td class="change_name_1">Fahrenheit</td>
+                <td><input type="number" maxlength="5" disabled="disabled" class="result"/></td>
+            </tr>
+            <tr>
+                <td><button class="btn_convert">Convert</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./convert_option.js"></script>
+</body>
+</html>
